@@ -24,7 +24,11 @@ Tested on Windows11 21H2 and Debian 12 (GNOME Wayland), both touchscreen and key
 
 ### Use precomplied binary
 
-Windows: Full version (313MB) & LITE version (30MB)
+Click to download :D
+
+Windows:
+- Full version (313MB) - [Download](https://github.com/puff-dayo/Simple-Manga-Viewer/releases/download/v1.0.0/SimpleMangaViewer_Windows_Full.7z)
+- LITE version (30MB) - [Download](https://github.com/puff-dayo/Simple-Manga-Viewer/releases/download/v1.0.0/SimpleMangaViewer_Windows_Lite.7z)
 
 Debian/Ubuntu: WIP...
 
