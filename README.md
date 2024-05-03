@@ -34,6 +34,11 @@ Debian/Ubuntu: WIP...
 
 ### Run from source
 
+<details>
+  <summary> Click to expand </summary>
+
+--------------
+
 Python 3.10.14 is recommended. X86_64 CPU is required.
 
 Remember to manually remove numpy, opencv-python and pyanime4K from `requirements.txt` if you only need to run/compile a LITE version.
@@ -51,7 +56,15 @@ and for the LITE version:
 python -m SimpleMangaViewerLITE.py
 ```
 
+</details>
+
 ### Compile your own
+
+
+<details>
+  <summary> Click to expand </summary>
+
+-------------
 
 Step 1:
  
@@ -76,3 +89,5 @@ Step 2: Copy the `pyanime4K` folder from `Lib\site-packages` into `SimpleMangaVi
 Step 3: Copy `icon-512.png` into the same folder as well. (optional)
 
 Step 4: Run the `.exe` file in folder `SimpleMangaViewer.dist`.
+
+</details>
