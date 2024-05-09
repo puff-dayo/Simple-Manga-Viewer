@@ -34,7 +34,7 @@ jobs:
 
     - name: Nuitka compile
       run: |
-        python -m nuitka --standalone --show-progress --disable-console --onefile --plugin-enable=pyside6 --output-dir=build_output SimpleMangaViewerLITE.py
+        python -m nuitka --standalone --show-progress --disable-console --onefile --plugin-enable=pyside6 --output-dir=build_output src/SimpleMangaViewerLITE.py
 
     - name: Archive build_output folder
       run: |
