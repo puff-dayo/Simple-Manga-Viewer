@@ -29,7 +29,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install nuitka
-        wget https://github.com/TianZerL/pyanime4k/raw/master/setup_wheel_ubuntu.sh && chmod +x setup_wheel_ubuntu.sh && ./setup_wheel_ubuntu.sh
+        wget https://github.com/TianZerL/pyanime4k/raw/master/setup_wheel_ubuntu.sh && chmod +x setup_wheel_ubuntu.sh && sudo ./setup_wheel_ubuntu.sh
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: Nuitka compile
@@ -43,3 +43,14 @@ jobs:
     - name: Copy icon file
       run: |
         cp icon-512.png build_output/SimpleMangaViewerLITE.dist/
+
+    - name: Archive build_output folder
+      run: |
+        cd build_output
+        zip -r SimpleMangaViewerLITE.zip SimpleMangaViewerLITE.dist
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: SimpleMangaViewerLITE
+        path: build_output/SimpleMangaViewerLITE.zip
