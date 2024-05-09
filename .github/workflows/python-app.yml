@@ -30,6 +30,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install nuitka
         wget https://github.com/TianZerL/pyanime4k/raw/master/setup_wheel_ubuntu.sh && chmod +x setup_wheel_ubuntu.sh && sudo ./setup_wheel_ubuntu.sh
+        pip install /root/pyanime4k_wheel/pyanime4k-2.5.2-py3-none-any.whl
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: Nuitka compile
